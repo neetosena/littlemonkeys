@@ -1,4 +1,5 @@
 import React from "react";
+import StaffComp from "../components/StaffComp";
 
 const Staff = () => {
   return (
@@ -13,20 +14,7 @@ const Staff = () => {
         Monkeys are fully Garda vetted and are committed to ongoing training and
         professional development.
       </p>
-      <div className="staff-carrousel-container">
-        <div className="staff-carrousel">
-          <img src="" alt="" />
-          <h4>Sara</h4>
-          <p>Preschool Assistant 1st Year ECCE Breakfast Club</p>
-
-          <div className="staff-description-container">
-            <p>FETAC LEVEL 5:</p>
-            <strong>EARLY CHILDHOOD CARE AND EDUCATION</strong>
-            <p>Currently working towards full Level 6</p>
-            <strong>award in Early Childhood Care and Education</strong>
-          </div>
-        </div>
-      </div>
+      <StaffComp />
     </div>
   );
 };

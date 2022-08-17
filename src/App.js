@@ -44,7 +44,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="Blog" element={<Blog />} />
       </Routes>
-      <Home />
+
       <Footer />
     </>
   );

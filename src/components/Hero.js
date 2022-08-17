@@ -7,7 +7,7 @@ const Hero = () => {
       <h1>Welcome to Little Monkeys</h1>
       <span>What We Offer: </span>
 
-      {heroImages.map((item, index) => {
+      {heroImages.map((item) => {
         const { id, image, alt } = item;
         return <img key={id} src={image} alt={alt} />;
       })}
