@@ -1,5 +1,6 @@
 import ImageHeroOne from "../images/banner21.jpeg";
 import ImageHeroSecond from "../images/banner31.jpeg";
+import Alison from "../images/alison.png";
 
 const heroImages = [
   {
@@ -17,7 +18,7 @@ const heroImages = [
 const staff = [
   {
     name: "Alison",
-    image: "",
+    image: Alison,
     department: [
       "Manager",
       "Room Leader 1st Year ECCE Inclusion Coordinator Child Welfare Designated Liaison Person",
@@ -31,7 +32,7 @@ const staff = [
   },
   {
     name: "Carol",
-    image: "",
+    image: Alison,
     department: [
       "Owner And Manager",
       "Inclusion Coordinator Child Welfare Designated Liaison Person Covid-19 Representative",
@@ -45,7 +46,7 @@ const staff = [
   },
   {
     name: "Aisling",
-    image: "",
+    image: Alison,
     department: ["Aim Support Worker"],
     level: [
       "FETAC LEVEL 5: EARLY CHILDHOOD CARE AND EDUCATION",
@@ -55,7 +56,7 @@ const staff = [
   },
   {
     name: "Jade",
-    image: "",
+    image: Alison,
     department: ["ECCE Assistant  2nd Year"],
     level: [
       "FETAC LEVEL 6: EARLY YEARS CHILDHOOD CARE AND EDUCATION",
@@ -65,7 +66,7 @@ const staff = [
   },
   {
     name: "Sarah",
-    image: "",
+    image: Alison,
     department: ["ECCE Assistant 2nd YearAIM Support"],
     level: [
       "FETAC LEVEL 5: EARLY CHILDHOOD CARE AND EDUCATION",
@@ -74,7 +75,7 @@ const staff = [
   },
   {
     name: "Lyndsey",
-    image: "",
+    image: Alison,
     department: ["AIM Support Worker", "ECCE Assistant 1st Year"],
     level: [
       "FETAC LEVEL 6: EARLY CHILDHOOD CARE AND EDUCATION",
@@ -83,7 +84,7 @@ const staff = [
   },
   {
     name: "Kelly",
-    image: "",
+    image: Alison,
     department: [
       "Manager",
       "Room Leader 2nd Year ECCE Health and Safety Officer",
@@ -97,7 +98,7 @@ const staff = [
   },
   {
     name: "Chloe",
-    image: "",
+    image: Alison,
     department: ["Afterschool Assistant", "Ecce Assistant", "Breakfast Club"],
     level: [
       "FETAC LEVEL 6 :EARLY CHILDHOOD CARE AND EDUCATION",
@@ -107,7 +108,7 @@ const staff = [
   },
   {
     name: "Sarah",
-    image: "",
+    image: Alison,
     department: ["Afterschool Assistant"],
     level: [
       "LEVEL 5 QQI: EARLY CHILDHOOD CARE AND EDUCATION",
@@ -117,7 +118,7 @@ const staff = [
   },
   {
     name: "Sue",
-    image: "",
+    image: Alison,
     department: ["Afterschool Assistant", "Ecce Assistant", "Breakfast Club"],
     level: [
       "LEVEL 5 QQI: EARLY CHILDHOOD CARE AND EDUCATION",
@@ -126,7 +127,7 @@ const staff = [
   },
   {
     name: "Ágota",
-    image: "",
+    image: Alison,
     department: ["Afterschool Assistant"],
     level: [
       "MA ART HISTORY, GERMAN & ROMANCE PHILOLOGY",
@@ -135,7 +136,7 @@ const staff = [
   },
   {
     name: "Michelle",
-    image: "",
+    image: Alison,
     department: ["Afterschool Assistant"],
     level: [
       "FETAC LEVEL 6 :EARLY CHILDHOOD CARE AND EDUCATION",
@@ -145,7 +146,7 @@ const staff = [
   },
   {
     name: "Rebecca",
-    image: "",
+    image: Alison,
     department: ["Afterschool Assistant"],
     level: ["QQI LEVEL 5 NURSING STUDIES"],
   },
