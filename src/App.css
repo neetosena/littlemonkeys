@@ -1,5 +1,9 @@
 /* || General Styles */
-
+*,
+::before,
+::after {
+  box-sizing: border-box !important;
+}
 .App {
   text-align: center;
 }
@@ -7,6 +11,14 @@
 .hero-container {
   border: 1px solid magenta;
 }
+
+/* -----------------------------HERO------------------------------- */
+
+.hero-container img {
+  width: 100%;
+}
+
+/* -----------------------------END------------------------------- */
 
 /* -----------------------------STAFF------------------------------- */
 
@@ -76,3 +88,138 @@
 .btn-slide.active {
   background-color: black;
 }
+
+/* -----------------------------END------------------------------- */
+
+/* -----------------------------TABS------------------------------- */
+
+.tabs-container {
+}
+
+.tabs-inner-container {
+  border: 1px solid blue;
+}
+.tabs-items-container {
+  list-style: none;
+  padding: 0;
+}
+
+.tabs-inner-description.hidden {
+  display: none;
+}
+
+/* -----------------------------END------------------------------- */
+
+/* -------------------------TESTIMONIALS-------------------------- */
+.testimonialsComp-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonialsComp-container-inner {
+  border: 3px solid magenta;
+  height: 20em;
+  max-width: 800px;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+}
+
+.testimonial-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: transform ease-in 1s, opacity ease-in-out 1s;
+}
+.active-testimonial {
+  opacity: 1;
+
+  transform: translateX(0);
+}
+
+.next-testimonial {
+  transform: translateX(100%);
+}
+
+.last-testimonial {
+  transform: translateX(-100%);
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 0vw;
+}
+
+/* -----------------------------END------------------------------- */
+
+/* ---------------------------GALLERY----------------------------- */
+
+.galleryComp-container {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}
+
+.model {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.4s ease,
+    transform 0.5s ease-in-out;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.model.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.model img {
+  width: 80vw;
+  height: auto;
+}
+
+.gallery-close-icon {
+  position: fixed;
+  top: 0.5em;
+  right: 0.5em;
+  color: white;
+  font-size: 3rem;
+  transition: opacity ease 0.5s;
+}
+
+.gallery-close-icon:hover,
+.gallery-close-icon:focus {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* -----------------------------END------------------------------- */
