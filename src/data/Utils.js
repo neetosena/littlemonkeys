@@ -1,5 +1,6 @@
-import ImageHeroOne from "../images/banner21.jpeg";
+import ImageHeroOne from "../images/banner21-2.jpg";
 import ImageHeroSecond from "../images/banner31.jpeg";
+import ImageHeroThird from "../images/young_boy.jpeg";
 
 import Alison from "../images/alison.png";
 
@@ -33,7 +34,12 @@ const heroImages = [
   {
     id: 2,
     image: ImageHeroSecond,
-    alt: "Child 1",
+    alt: "Child 2",
+  },
+  {
+    id: 3,
+    image: ImageHeroThird,
+    alt: "Child 3",
   },
 ];
 

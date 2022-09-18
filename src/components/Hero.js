@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { heroImages } from "../data/Utils";
 
 const Hero = () => {
+  const [index, setIndex] = useState(1);
+
+  useEffect(() => {}, []);
+
   return (
     <div className="hero-container">
-      <h1>Welcome to Little Monkeys</h1>
-      <span>What We Offer: </span>
+      <span className="title">Welcome to Little Monkeys</span>
+      <span className="sub-title">What We Offer: </span>
 
-      {heroImages.map((item) => {
-        const { id, image, alt } = item;
-        return <img key={id} src={image} alt={alt} />;
-      })}
+      <div className="hero-slide">
+        {heroImages.map((item) => {
+          const { id, image, alt } = item;
+          let position = "next-slide";
+          if (id === index) {
+            position = "actual-slide";
+          }
+          return <img key={id} className={position} src={image} alt={alt} />;
+        })}
+      </div>
 
       <div className="hero-cards-container">
         <div className="hero-card">

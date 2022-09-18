@@ -1,4 +1,5 @@
 /* || General Styles */
+
 *,
 ::before,
 ::after {
@@ -68,13 +69,52 @@ nav {
 
 /* -----------------------------END------------------------------- */
 
+/* -----------------------------HERO------------------------------- */
 .hero-container {
+  position: relative;
+  min-height: 100vh;
+  border: 1px solid magenta;
 }
 
-/* -----------------------------HERO------------------------------- */
-
-.hero-container img {
+.hero-container .title {
+  position: absolute;
+  left: 0;
+  top: 1em;
   width: 100%;
+  text-align: center;
+  font-family: var(--secondary-font);
+  color: white;
+  font-size: 3.625rem;
+}
+
+.hero-container .sub-title {
+  position: absolute;
+  top: 8em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.hero-slide img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  background-color: red;
+}
+
+.next-slide {
+  transform: translateX(100%);
+}
+
+.actual-slide {
+  transform: translateX(0);
+}
+
+@media (max-width: 1000px) {
 }
 
 /* -----------------------------END------------------------------- */
